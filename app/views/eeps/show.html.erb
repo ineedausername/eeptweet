@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Post:</b>
+  <%= @eep.post %>
+</p>
+
+<p>
+  <b>Mood:</b>
+  <%= @eep.mood %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @eep.location %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @eep.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_eep_path(@eep) %> |
+<%= link_to 'Back', eeps_path %>

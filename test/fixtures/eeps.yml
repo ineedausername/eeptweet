@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  post: MyString
+  mood: MyString
+  location: MyString
+  user_id: 1
+
+two:
+  post: MyString
+  mood: MyString
+  location: MyString
+  user_id: 1

@@ -1,0 +1,29 @@
+<h1>Listing eeps</h1>
+
+<table>
+  <tr>
+    <th>Post</th>
+    <th>Mood</th>
+    <th>Location</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @eeps.each do |eep| %>
+  <tr>
+    <td><%= eep.post %></td>
+    <td><%= eep.mood %></td>
+    <td><%= eep.location %></td>
+    <td><%= eep.user_id %></td>
+    <td><%= link_to 'Show', eep %></td>
+    <td><%= link_to 'Edit', edit_eep_path(eep) %></td>
+    <td><%= link_to 'Destroy', eep, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Eep', new_eep_path %>
