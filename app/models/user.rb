@@ -6,6 +6,6 @@ class User < ActiveRecord::Base
   has_many :eeps
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :eep_id
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :eep_id, :first_name, :last_name
 end
 
